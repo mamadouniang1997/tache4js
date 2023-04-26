@@ -1,0 +1,35 @@
+<html>
+   <head>
+      <script>
+         function check(){
+             var nbr;
+             nbr = Number(document.getElementById("age").value);
+             if(nbr < 14)
+             {
+                alert("VOUS ETES UN ENFANT");
+             }
+            else if(nbr < 25  )
+             {
+                alert(" VOUS ETES UN ADOLECANT");
+             }
+           else  if(nbr <= 64   )
+             {
+                alert(" VOUS ETES UN ADULTE");
+             }
+            
+             else if(nbr > 64) {      
+                alert(" VOUS ETES UN Ainé");
+             }
+             else{
+                alert("rien");
+             }
+            
+
+         }
+      </script>
+   </head>
+   <body>
+      Entrez votre age: <input id="age">
+      <button onclick="check()">Vérifier</button>
+   </body>
+</html>
